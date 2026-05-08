@@ -1,10 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2025.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2025.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S "C:\Users\flori\Documents\Nouveau dossier (2)\PROJETINFOS2" -B "C:\Users\flori\Documents\Nouveau dossier (2)\PROJETINFOS2\cmake-build-debug"
--- The C compiler identification is GNU 6.3.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Users/flori/Downloads/MinGW/MinGW/bin/gcc.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Configuring done (3.1s)
--- Generating done (0.1s)
--- Build files have been written to: C:/Users/flori/Documents/Nouveau dossier (2)/PROJETINFOS2/cmake-build-debug
+Cannot generate into C:\Users\flori\Documents\Nouveau dossier (2)\PROJETINFOS2
+It was created with incompatible generator 'MinGW Makefiles'
+
+Please either delete it manually or select another generation directory
