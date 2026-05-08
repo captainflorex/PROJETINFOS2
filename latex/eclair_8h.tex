@@ -1,0 +1,154 @@
+\doxysection{Référence du fichier eclair.\+h}
+\hypertarget{eclair_8h}{}\label{eclair_8h}\index{eclair.h@{eclair.h}}
+{\ttfamily \+\#include $<$allegro.\+h$>$}\newline
+Graphe des dépendances par inclusion de eclair.\+h:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{eclair_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eclair_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{struct_eclair}{Eclair}}
+\item 
+struct \doxymbox{\hyperlink{struct_liste_eclairs}{Liste\+Eclairs}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\+\#define \doxymbox{\hyperlink{eclair_8h_a0c657b7e41b983852557d4961f16214b}{MAX\+\_\+\+ECLAIRS}}~10
+\item 
+\+\#define \doxymbox{\hyperlink{eclair_8h_ace9f9a718c90581dc08f42da83ba8e73}{ECLAIR\+\_\+\+LARGEUR}}~6
+\item 
+\+\#define \doxymbox{\hyperlink{eclair_8h_a01247b9a9dc70c90be2f88a984b59fe7}{ECLAIR\+\_\+\+VITESSE}}~5
+\item 
+\+\#define \doxymbox{\hyperlink{eclair_8h_ae5d566256b8f9a8c61eb7399c6f4b7f2}{ECLAIR\+\_\+\+DUREE\+\_\+\+VIE}}~120  /\+\texorpdfstring{$\ast$}{*} frames avant disparition si pas de collision \texorpdfstring{$\ast$}{*}/\+
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{eclair_8h_a4dcdbb9f937d5a1b7c8fe252e7c04686}{eclairs\+\_\+init}} (\doxymbox{\hyperlink{struct_liste_eclairs}{Liste\+Eclairs}} \texorpdfstring{$\ast$}{*}le)
+\item 
+void \doxymbox{\hyperlink{eclair_8h_a94d73eb8a889534102b2442ed022db13}{eclair\+\_\+spawner}} (\doxymbox{\hyperlink{struct_liste_eclairs}{Liste\+Eclairs}} \texorpdfstring{$\ast$}{*}le, float x, float y)
+\item 
+void \doxymbox{\hyperlink{eclair_8h_a41927b1d41e1bda12297701119910c62}{eclairs\+\_\+mettre\+\_\+a\+\_\+jour}} (\doxymbox{\hyperlink{struct_liste_eclairs}{Liste\+Eclairs}} \texorpdfstring{$\ast$}{*}le)
+\item 
+int \doxymbox{\hyperlink{eclair_8h_a015f8251e73ed40f9236a4eabc7f037b}{eclairs\+\_\+collision\+\_\+personnage}} (const \doxymbox{\hyperlink{struct_liste_eclairs}{Liste\+Eclairs}} \texorpdfstring{$\ast$}{*}le, float px, float py, int plargeur, int phauteur)
+\item 
+void \doxymbox{\hyperlink{eclair_8h_a693961ccc3b568ea454db1853e64393b}{dessiner\+\_\+eclairs}} (BITMAP \texorpdfstring{$\ast$}{*}tampon, const \doxymbox{\hyperlink{struct_liste_eclairs}{Liste\+Eclairs}} \texorpdfstring{$\ast$}{*}le)
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{eclair_8h_doc-define-members}
+\doxysubsection{Documentation des macros}
+\Hypertarget{eclair_8h_ae5d566256b8f9a8c61eb7399c6f4b7f2}\index{eclair.h@{eclair.h}!ECLAIR\_DUREE\_VIE@{ECLAIR\_DUREE\_VIE}}
+\index{ECLAIR\_DUREE\_VIE@{ECLAIR\_DUREE\_VIE}!eclair.h@{eclair.h}}
+\doxysubsubsection{\texorpdfstring{ECLAIR\_DUREE\_VIE}{ECLAIR\_DUREE\_VIE}}
+{\footnotesize\ttfamily \label{eclair_8h_ae5d566256b8f9a8c61eb7399c6f4b7f2} 
+\+\#define ECLAIR\+\_\+\+DUREE\+\_\+\+VIE~120  /\+\texorpdfstring{$\ast$}{*} frames avant disparition si pas de collision \texorpdfstring{$\ast$}{*}/\+}
+
+\Hypertarget{eclair_8h_ace9f9a718c90581dc08f42da83ba8e73}\index{eclair.h@{eclair.h}!ECLAIR\_LARGEUR@{ECLAIR\_LARGEUR}}
+\index{ECLAIR\_LARGEUR@{ECLAIR\_LARGEUR}!eclair.h@{eclair.h}}
+\doxysubsubsection{\texorpdfstring{ECLAIR\_LARGEUR}{ECLAIR\_LARGEUR}}
+{\footnotesize\ttfamily \label{eclair_8h_ace9f9a718c90581dc08f42da83ba8e73} 
+\+\#define ECLAIR\+\_\+\+LARGEUR~6}
+
+\Hypertarget{eclair_8h_a01247b9a9dc70c90be2f88a984b59fe7}\index{eclair.h@{eclair.h}!ECLAIR\_VITESSE@{ECLAIR\_VITESSE}}
+\index{ECLAIR\_VITESSE@{ECLAIR\_VITESSE}!eclair.h@{eclair.h}}
+\doxysubsubsection{\texorpdfstring{ECLAIR\_VITESSE}{ECLAIR\_VITESSE}}
+{\footnotesize\ttfamily \label{eclair_8h_a01247b9a9dc70c90be2f88a984b59fe7} 
+\+\#define ECLAIR\+\_\+\+VITESSE~5}
+
+\Hypertarget{eclair_8h_a0c657b7e41b983852557d4961f16214b}\index{eclair.h@{eclair.h}!MAX\_ECLAIRS@{MAX\_ECLAIRS}}
+\index{MAX\_ECLAIRS@{MAX\_ECLAIRS}!eclair.h@{eclair.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_ECLAIRS}{MAX\_ECLAIRS}}
+{\footnotesize\ttfamily \label{eclair_8h_a0c657b7e41b983852557d4961f16214b} 
+\+\#define MAX\+\_\+\+ECLAIRS~10}
+
+
+
+\label{doc-func-members}
+\Hypertarget{eclair_8h_doc-func-members}
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{eclair_8h_a693961ccc3b568ea454db1853e64393b}\index{eclair.h@{eclair.h}!dessiner\_eclairs@{dessiner\_eclairs}}
+\index{dessiner\_eclairs@{dessiner\_eclairs}!eclair.h@{eclair.h}}
+\doxysubsubsection{\texorpdfstring{dessiner\_eclairs()}{dessiner\_eclairs()}}
+{\footnotesize\ttfamily \label{eclair_8h_a693961ccc3b568ea454db1853e64393b} 
+void dessiner\+\_\+eclairs (\begin{DoxyParamCaption}\item[{BITMAP \texorpdfstring{$\ast$}{*}}]{tampon}{, }\item[{const \doxymbox{\hyperlink{struct_liste_eclairs}{Liste\+Eclairs}} \texorpdfstring{$\ast$}{*}}]{le}{}\end{DoxyParamCaption})}
+
+Voici le graphe des appelants de cette fonction :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eclair_8h_a693961ccc3b568ea454db1853e64393b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{eclair_8h_a94d73eb8a889534102b2442ed022db13}\index{eclair.h@{eclair.h}!eclair\_spawner@{eclair\_spawner}}
+\index{eclair\_spawner@{eclair\_spawner}!eclair.h@{eclair.h}}
+\doxysubsubsection{\texorpdfstring{eclair\_spawner()}{eclair\_spawner()}}
+{\footnotesize\ttfamily \label{eclair_8h_a94d73eb8a889534102b2442ed022db13} 
+void eclair\+\_\+spawner (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_liste_eclairs}{Liste\+Eclairs}} \texorpdfstring{$\ast$}{*}}]{le}{, }\item[{float}]{x}{, }\item[{float}]{y}{}\end{DoxyParamCaption})}
+
+Voici le graphe des appelants de cette fonction :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eclair_8h_a94d73eb8a889534102b2442ed022db13_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{eclair_8h_a015f8251e73ed40f9236a4eabc7f037b}\index{eclair.h@{eclair.h}!eclairs\_collision\_personnage@{eclairs\_collision\_personnage}}
+\index{eclairs\_collision\_personnage@{eclairs\_collision\_personnage}!eclair.h@{eclair.h}}
+\doxysubsubsection{\texorpdfstring{eclairs\_collision\_personnage()}{eclairs\_collision\_personnage()}}
+{\footnotesize\ttfamily \label{eclair_8h_a015f8251e73ed40f9236a4eabc7f037b} 
+int eclairs\+\_\+collision\+\_\+personnage (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{struct_liste_eclairs}{Liste\+Eclairs}} \texorpdfstring{$\ast$}{*}}]{le}{, }\item[{float}]{px}{, }\item[{float}]{py}{, }\item[{int}]{plargeur}{, }\item[{int}]{phauteur}{}\end{DoxyParamCaption})}
+
+Voici le graphe des appelants de cette fonction :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eclair_8h_a015f8251e73ed40f9236a4eabc7f037b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{eclair_8h_a4dcdbb9f937d5a1b7c8fe252e7c04686}\index{eclair.h@{eclair.h}!eclairs\_init@{eclairs\_init}}
+\index{eclairs\_init@{eclairs\_init}!eclair.h@{eclair.h}}
+\doxysubsubsection{\texorpdfstring{eclairs\_init()}{eclairs\_init()}}
+{\footnotesize\ttfamily \label{eclair_8h_a4dcdbb9f937d5a1b7c8fe252e7c04686} 
+void eclairs\+\_\+init (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_liste_eclairs}{Liste\+Eclairs}} \texorpdfstring{$\ast$}{*}}]{le}{}\end{DoxyParamCaption})}
+
+Voici le graphe des appelants de cette fonction :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eclair_8h_a4dcdbb9f937d5a1b7c8fe252e7c04686_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{eclair_8h_a41927b1d41e1bda12297701119910c62}\index{eclair.h@{eclair.h}!eclairs\_mettre\_a\_jour@{eclairs\_mettre\_a\_jour}}
+\index{eclairs\_mettre\_a\_jour@{eclairs\_mettre\_a\_jour}!eclair.h@{eclair.h}}
+\doxysubsubsection{\texorpdfstring{eclairs\_mettre\_a\_jour()}{eclairs\_mettre\_a\_jour()}}
+{\footnotesize\ttfamily \label{eclair_8h_a41927b1d41e1bda12297701119910c62} 
+void eclairs\+\_\+mettre\+\_\+a\+\_\+jour (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_liste_eclairs}{Liste\+Eclairs}} \texorpdfstring{$\ast$}{*}}]{le}{}\end{DoxyParamCaption})}
+
+Voici le graphe des appelants de cette fonction :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eclair_8h_a41927b1d41e1bda12297701119910c62_icgraph}
+\end{center}
+\end{figure}

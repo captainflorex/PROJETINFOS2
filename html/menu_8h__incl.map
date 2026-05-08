@@ -1,0 +1,10 @@
+<map id="menu.h" name="menu.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="11,5,88,38"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,247,91,280"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,41,39,86,40,199,45,232,39,232,35,200,33,86,46,36"/>
+<area shape="rect" id="Node000003" href="$entites_8h.html" title=" " alt="" coords="48,86,130,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="57,36,77,72,72,73,57,41"/>
+<area shape="rect" id="Node000004" href="$eclair_8h.html" title=" " alt="" coords="50,167,124,199"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="90,117,90,152,85,151,88,122"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="81,198,65,235,60,232,77,201"/>
+</map>

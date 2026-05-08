@@ -1,0 +1,18 @@
+<map id="jeu.c" name="jeu.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="185,5,241,38"/>
+<area shape="rect" id="Node000002" href="$jeu_8h.html" title=" " alt="" coords="82,86,139,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,40,145,78,141,74,195,36"/>
+<area shape="rect" id="Node000003" href="$entites_8h.html" title=" " alt="" coords="5,167,88,199"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="183,30,127,49,98,65,73,88,56,119,50,152,45,151,51,117,68,84,95,61,125,44,186,26"/>
+<area shape="rect" id="Node000004" href="$eclair_8h.html" title=" " alt="" coords="88,247,162,280"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="210,38,138,234,134,232,205,38"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="214,86,287,119"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="221,36,239,72,234,72,220,41"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="310,86,386,119"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="240,36,310,77,305,79,240,41"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="410,86,486,119"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="242,30,397,82,393,85,242,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="97,121,71,156,66,153,99,117"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="114,117,125,232,120,231,110,120"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="63,197,102,236,97,237,61,202"/>
+</map>

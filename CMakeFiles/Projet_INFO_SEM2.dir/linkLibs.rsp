@@ -1,0 +1,1 @@
+ "alfont-code-r12-trunk/alfont-code-r12-trunk/lib/mingw32/libalfont.a" -lmingw32 -lalleg44 -lm -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

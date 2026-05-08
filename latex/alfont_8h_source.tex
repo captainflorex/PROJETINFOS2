@@ -1,0 +1,115 @@
+\doxysection{alfont.\+h}
+\hypertarget{alfont_8h_source}{}\label{alfont_8h_source}\doxymbox{\hyperlink{alfont_8h}{Aller Ã  la documentation de ce fichier.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ AllegroFont\ -\/\ a\ wrapper\ for\ FreeType\ 2\ */}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*\ to\ render\ TTF\ and\ other\ font\ formats\ with\ Allegro\ */}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00005\ \textcolor{comment}{/*\ FreeType\ 2\ is\ copyright\ (c)\ 1996-\/2000\ */}}
+\DoxyCodeLine{00006\ \textcolor{comment}{/*\ David\ Turner,\ Robert\ Wilhelm,\ and\ Werner\ Lemberg\ */}}
+\DoxyCodeLine{00007\ \textcolor{comment}{/*\ AllegroFont\ is\ copyright\ (c)\ 2001,\ 2002\ Javier\ Gonz lez\ */}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{comment}{/*\ See\ FTL.txt\ (FreeType\ Project\ License)\ for\ license\ */}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ ALFONT\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ ALFONT\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <allegro.h>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{alfontdll_8h}{alfontdll.h}}"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00022\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{comment}{/*\ common\ define\ */}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ ALFONT\_MAJOR\_VERSION\ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ ALFONT\_MINOR\_VERSION\ \ \ \ \ \ \ \ 9}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ ALFONT\_SUB\_VERSION\ \ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ ALFONT\_VERSION\_STR\ \ \ \ \ \ \ \ \ \ "{}1.9.1"{}}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ ALFONT\_DATE\_STR\ \ \ \ \ \ \ \ \ \ \ \ \ "{}24/11/2002"{}}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ ALFONT\_DATE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 20021124\ \ \ \ }\textcolor{comment}{/*\ yyyymmdd\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{comment}{/*\ error\ codes\ */}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ ALFONT\_OK\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ ALFONT\_ERROR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/1}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{comment}{/*\ includes\ */}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ <allegro.h>}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{comment}{/*\ structs\ */}}
+\DoxyCodeLine{00047\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{comment}{/*\ API\ */}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{alfont_8h_a0dbdcd668869ffb13e4a2b2e12b753d3}{alfont\_init}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00053\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_af2bcc3c080bd6827885dd7728d504800}{alfont\_exit}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *\doxymbox{\hyperlink{alfont_8h_a72fd70c18de1523fc9ee42ae915e4132}{alfont\_load\_font}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *filepathname);}
+\DoxyCodeLine{00056\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *\doxymbox{\hyperlink{alfont_8h_a8c241b546dc9955243cca917b2f3e723}{alfont\_load\_font\_from\_mem}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *data,\ \textcolor{keywordtype}{int}\ data\_len);}
+\DoxyCodeLine{00057\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_aeffe5e9c2fe0eeabde8f2b796f2eec3f}{alfont\_destroy\_font}}(\doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{alfont_8h_a94922d1737f3b629e8cff1ea311a1d86}{alfont\_set\_font\_size}}(\doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keywordtype}{int}\ h);}
+\DoxyCodeLine{00060\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{alfont_8h_a5e3a753d10bc60309b69218daa81ec74}{alfont\_get\_font\_height}}(\doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{alfont_8h_a34d3668c482a502d64426265d1a62787}{alfont\_text\_mode}}(\textcolor{keywordtype}{int}\ mode);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_ac261f94be7ae3a4170d43cbe81a04427}{alfont\_textout\_aa}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *s,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color);}
+\DoxyCodeLine{00065\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a125cc2940b573b04501c79dc566f2bdb}{alfont\_textout}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *s,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color);}
+\DoxyCodeLine{00066\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a603d851978e42deb44b6a0365a5e4935}{alfont\_textout\_aa\_ex}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *s,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keywordtype}{int}\ bg);}
+\DoxyCodeLine{00067\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a5930fb0950a5e54b1571e09332140376}{alfont\_textout\_ex}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *s,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keywordtype}{int}\ bg);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_aba865330bedbe361535a65cdeab0c822}{alfont\_textout\_centre\_aa}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *s,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color);}
+\DoxyCodeLine{00070\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a74eff40a8b7e70eb0a3c6e24f8487805}{alfont\_textout\_centre}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *s,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color);}
+\DoxyCodeLine{00071\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_adb9bc67114024dedb1998866922f6271}{alfont\_textout\_centre\_aa\_ex}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *s,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keywordtype}{int}\ bg);}
+\DoxyCodeLine{00072\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a3ca36946f44acb3d901760951067ec06}{alfont\_textout\_centre\_ex}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *s,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keywordtype}{int}\ bg);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a9d6341001e8d64e99c5eef379deb0a11}{alfont\_textout\_right\_aa}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *s,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color);}
+\DoxyCodeLine{00075\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_aae2700dca6ef72df26ae34c2d48b5ca0}{alfont\_textout\_right}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *s,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color);}
+\DoxyCodeLine{00076\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a1a67047efa4be5a2b65d622b06d83786}{alfont\_textout\_right\_aa\_ex}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *s,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keywordtype}{int}\ bg);}
+\DoxyCodeLine{00077\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_afa30892f075f5f3f8f7e8be5c8b98b66}{alfont\_textout\_right\_ex}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *s,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keywordtype}{int}\ bg);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a1d47e85e032c7ed77f67c203c27a74be}{alfont\_textprintf}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *format,\ ...);}
+\DoxyCodeLine{00080\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a7eb73d979802df95bbd741293349279e}{alfont\_textprintf\_aa}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *format,\ ...);}
+\DoxyCodeLine{00081\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a9ce5438bf95306edd977f5af1151b4d3}{alfont\_textprintf\_ex}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keywordtype}{int}\ bg,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *format,\ ...);}
+\DoxyCodeLine{00082\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a2b056e6a0c6a2a6fc9ec129658ef6f5a}{alfont\_textprintf\_aa\_ex}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keywordtype}{int}\ bg,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *format,\ ...);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_adfd4fca585c41b6371a8017049b0ee99}{alfont\_textprintf\_centre}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *format,\ ...);}
+\DoxyCodeLine{00085\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_adb5391ad40788ae4cd5ad1b712a70869}{alfont\_textprintf\_centre\_aa}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *format,\ ...);}
+\DoxyCodeLine{00086\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a0703e7c01a304bcec6bee11c5e5a1a35}{alfont\_textprintf\_centre\_ex}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keywordtype}{int}\ bg,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *format,\ ...);}
+\DoxyCodeLine{00087\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a7f809e3e387b13f749aa0b88ec73304f}{alfont\_textprintf\_centre\_aa\_ex}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keywordtype}{int}\ bg,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *format,\ ...);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a5f8d763e37247e1b86d4307d8ed02a51}{alfont\_textprintf\_right}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *format,\ ...);}
+\DoxyCodeLine{00090\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a5be232a8a514588ac055cb356ea270d3}{alfont\_textprintf\_right\_aa}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *format,\ ...);}
+\DoxyCodeLine{00091\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a6a47d2bf34a256931e4d087b190c967d}{alfont\_textprintf\_right\_ex}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keywordtype}{int}\ bg,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *format,\ ...);}
+\DoxyCodeLine{00092\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a06b24283a4e7d06a73db22e06ec62c7c}{alfont\_textprintf\_right\_aa\_ex}}(BITMAP\ *bmp,\ \doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,\ \textcolor{keywordtype}{int}\ bg,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *format,\ ...);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{alfont_8h_a902082295a8c073dec8b029372f78f15}{alfont\_text\_height}}(\doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f);}
+\DoxyCodeLine{00095\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{alfont_8h_a90874ba2a4713b70ce971be7f88c53a3}{alfont\_text\_length}}(\doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *str);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{alfont_8h_a76a65c2644ad0123b021c2f601331517}{alfont\_is\_fixed\_font}}(\doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f);}
+\DoxyCodeLine{00098\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{alfont_8h_a8b21d4e0f1da3cb5f47e745eda1a4973}{alfont\_is\_scalable\_font}}(\doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ *\doxymbox{\hyperlink{alfont_8h_ae4427b50ef91518dbef35cb52aa8be0f}{alfont\_get\_available\_fixed\_sizes}}(\doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f);}
+\DoxyCodeLine{00101\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{alfont_8h_a0abf9cb6e8e37647ada569effd54cc50}{alfont\_get\_nof\_available\_fixed\_sizes}}(\doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f);}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{alfont_8h_ae418f2529aafeeef79debc563cf6e07e}{alfont\_get\_char\_extra\_spacing}}(\doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f);}
+\DoxyCodeLine{00104\ \doxymbox{\hyperlink{alfontdll_8h_afb90227ee50406f5656f452818c86df0}{ALFONT\_DLL\_DECLSPEC}}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{alfont_8h_a1a5544be8aed414f385e70d8c798e3f5}{alfont\_set\_char\_extra\_spacing}}(\doxymbox{\hyperlink{alfont_8h_abad2d5b3ed8305634992a280ceb63f39}{ALFONT\_FONT}}\ *f,\ \textcolor{keywordtype}{int}\ spacing);}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00107\ \}}
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

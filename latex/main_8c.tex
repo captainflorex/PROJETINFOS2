@@ -1,0 +1,190 @@
+\doxysection{Référence du fichier main.\+c}
+\hypertarget{main_8c}{}\label{main_8c}\index{main.c@{main.c}}
+{\ttfamily \+\#include $<$allegro.\+h$>$}\newline
+{\ttfamily \+\#include $<$alfont.\+h$>$}\newline
+{\ttfamily \+\#include "{}affichage.\+h"{}}\newline
+{\ttfamily \+\#include "{}jeu.\+h"{}}\newline
+{\ttfamily \+\#include "{}entrees.\+h"{}}\newline
+{\ttfamily \+\#include "{}menu.\+h"{}}\newline
+{\ttfamily \+\#include "{}sauvegarde.\+h"{}}\newline
+{\ttfamily \+\#include $<$windows.\+h$>$}\newline
+Graphe des dépendances par inclusion de main.\+c:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\+\#define \doxymbox{\hyperlink{main_8c_a2bedaca1c6ca66de2397772910fbe140}{NOGDI}}
+\item 
+\+\#define \doxymbox{\hyperlink{main_8c_ac7bef5d85e3dcd73eef56ad39ffc84a9}{WIN32\+\_\+\+LEAN\+\_\+\+AND\+\_\+\+MEAN}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \doxymbox{\hyperlink{main_8c_a3a6fdc193bb7d49efa29f51611331815}{Etat\+Application}} \{ \newline
+\doxymbox{\hyperlink{main_8c_a3a6fdc193bb7d49efa29f51611331815a62dbc8350c17b44d1269eb737f9c641e}{ETAT\+\_\+\+MENU}}
+, \doxymbox{\hyperlink{main_8c_a3a6fdc193bb7d49efa29f51611331815a3707f37bd11ad87c3a0f7b5fde1c6eed}{ETAT\+\_\+\+SAISIE\+\_\+\+PSEUDO}}
+, \doxymbox{\hyperlink{main_8c_a3a6fdc193bb7d49efa29f51611331815aa1e6838a6301188faad49be1fde2ddb0}{ETAT\+\_\+\+SAISIE\+\_\+\+PSEUDO\+\_\+\+REPRISE}}
+, \doxymbox{\hyperlink{main_8c_a3a6fdc193bb7d49efa29f51611331815a38b284d47d74cf898b30cdcb07aa66a0}{ETAT\+\_\+\+EN\+\_\+\+JEU}}
+, \newline
+\doxymbox{\hyperlink{main_8c_a3a6fdc193bb7d49efa29f51611331815aaaf36b692a52d6e39908d37a6c0512bd}{ETAT\+\_\+\+PAUSE}}
+, \doxymbox{\hyperlink{main_8c_a3a6fdc193bb7d49efa29f51611331815a31f82efcc5848c2c56445cabb32633ea}{ETAT\+\_\+\+VICTOIRE}}
+, \doxymbox{\hyperlink{main_8c_a3a6fdc193bb7d49efa29f51611331815a9e6a39a14f43f33e3a229ec52f94627a}{ETAT\+\_\+\+DEFAITE}}
+, \doxymbox{\hyperlink{main_8c_a3a6fdc193bb7d49efa29f51611331815a96fdaf8f905a56c455b8243468ab3f4d}{ETAT\+\_\+\+QUITTER}}
+, \newline
+\doxymbox{\hyperlink{main_8c_a3a6fdc193bb7d49efa29f51611331815ae03b6191ae7a415eade1722cba2247b7}{ETAT\+\_\+\+SAUVEGARDE}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{main_8c_ab997a9e67270e2ce595ea9362874f072}{compteur}} (void)
+\item 
+static int \doxymbox{\hyperlink{main_8c_a9df11d22c0ecf29623a91a03addff8ef}{lister\+\_\+sauvegardes}} (char noms\+[$\,$]\+\+[\doxymbox{\hyperlink{entites_8h_a5d2813c915f8962316bdba34165daef5}{PSEUDO\+\_\+\+LEN}}]\+, int max)
+\item 
+int \doxymbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile int \doxymbox{\hyperlink{main_8c_ae4cb8f99f5f96d1a98ba57a75dab5c09}{tics}} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{main_8c_doc-define-members}
+\doxysubsection{Documentation des macros}
+\Hypertarget{main_8c_a2bedaca1c6ca66de2397772910fbe140}\index{main.c@{main.c}!NOGDI@{NOGDI}}
+\index{NOGDI@{NOGDI}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{NOGDI}{NOGDI}}
+{\footnotesize\ttfamily \label{main_8c_a2bedaca1c6ca66de2397772910fbe140} 
+\+\#define NOGDI}
+
+\Hypertarget{main_8c_ac7bef5d85e3dcd73eef56ad39ffc84a9}\index{main.c@{main.c}!WIN32\_LEAN\_AND\_MEAN@{WIN32\_LEAN\_AND\_MEAN}}
+\index{WIN32\_LEAN\_AND\_MEAN@{WIN32\_LEAN\_AND\_MEAN}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{WIN32\_LEAN\_AND\_MEAN}{WIN32\_LEAN\_AND\_MEAN}}
+{\footnotesize\ttfamily \label{main_8c_ac7bef5d85e3dcd73eef56ad39ffc84a9} 
+\+\#define WIN32\+\_\+\+LEAN\+\_\+\+AND\+\_\+\+MEAN}
+
+
+
+\label{doc-enum-members}
+\Hypertarget{main_8c_doc-enum-members}
+\doxysubsection{Documentation du type de l\textquotesingle{}énumération}
+\Hypertarget{main_8c_a3a6fdc193bb7d49efa29f51611331815}\index{main.c@{main.c}!EtatApplication@{EtatApplication}}
+\index{EtatApplication@{EtatApplication}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{EtatApplication}{EtatApplication}}
+{\footnotesize\ttfamily \label{main_8c_a3a6fdc193bb7d49efa29f51611331815} 
+enum \doxymbox{\hyperlink{main_8c_a3a6fdc193bb7d49efa29f51611331815}{Etat\+Application}}}
+
+\begin{DoxyEnumFields}[2]{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ETAT\_MENU@{ETAT\_MENU}!main.c@{main.c}}
+\index{main.c@{main.c}!ETAT\_MENU@{ETAT\_MENU}}
+}\Hypertarget{main_8c_a3a6fdc193bb7d49efa29f51611331815a62dbc8350c17b44d1269eb737f9c641e}\label{main_8c_a3a6fdc193bb7d49efa29f51611331815a62dbc8350c17b44d1269eb737f9c641e} 
+ETAT\+\_\+\+MENU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ETAT\_SAISIE\_PSEUDO@{ETAT\_SAISIE\_PSEUDO}!main.c@{main.c}}
+\index{main.c@{main.c}!ETAT\_SAISIE\_PSEUDO@{ETAT\_SAISIE\_PSEUDO}}
+}\Hypertarget{main_8c_a3a6fdc193bb7d49efa29f51611331815a3707f37bd11ad87c3a0f7b5fde1c6eed}\label{main_8c_a3a6fdc193bb7d49efa29f51611331815a3707f37bd11ad87c3a0f7b5fde1c6eed} 
+ETAT\+\_\+\+SAISIE\+\_\+\+PSEUDO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ETAT\_SAISIE\_PSEUDO\_REPRISE@{ETAT\_SAISIE\_PSEUDO\_REPRISE}!main.c@{main.c}}
+\index{main.c@{main.c}!ETAT\_SAISIE\_PSEUDO\_REPRISE@{ETAT\_SAISIE\_PSEUDO\_REPRISE}}
+}\Hypertarget{main_8c_a3a6fdc193bb7d49efa29f51611331815aa1e6838a6301188faad49be1fde2ddb0}\label{main_8c_a3a6fdc193bb7d49efa29f51611331815aa1e6838a6301188faad49be1fde2ddb0} 
+ETAT\+\_\+\+SAISIE\+\_\+\+PSEUDO\+\_\+\+REPRISE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ETAT\_EN\_JEU@{ETAT\_EN\_JEU}!main.c@{main.c}}
+\index{main.c@{main.c}!ETAT\_EN\_JEU@{ETAT\_EN\_JEU}}
+}\Hypertarget{main_8c_a3a6fdc193bb7d49efa29f51611331815a38b284d47d74cf898b30cdcb07aa66a0}\label{main_8c_a3a6fdc193bb7d49efa29f51611331815a38b284d47d74cf898b30cdcb07aa66a0} 
+ETAT\+\_\+\+EN\+\_\+\+JEU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ETAT\_PAUSE@{ETAT\_PAUSE}!main.c@{main.c}}
+\index{main.c@{main.c}!ETAT\_PAUSE@{ETAT\_PAUSE}}
+}\Hypertarget{main_8c_a3a6fdc193bb7d49efa29f51611331815aaaf36b692a52d6e39908d37a6c0512bd}\label{main_8c_a3a6fdc193bb7d49efa29f51611331815aaaf36b692a52d6e39908d37a6c0512bd} 
+ETAT\+\_\+\+PAUSE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ETAT\_VICTOIRE@{ETAT\_VICTOIRE}!main.c@{main.c}}
+\index{main.c@{main.c}!ETAT\_VICTOIRE@{ETAT\_VICTOIRE}}
+}\Hypertarget{main_8c_a3a6fdc193bb7d49efa29f51611331815a31f82efcc5848c2c56445cabb32633ea}\label{main_8c_a3a6fdc193bb7d49efa29f51611331815a31f82efcc5848c2c56445cabb32633ea} 
+ETAT\+\_\+\+VICTOIRE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ETAT\_DEFAITE@{ETAT\_DEFAITE}!main.c@{main.c}}
+\index{main.c@{main.c}!ETAT\_DEFAITE@{ETAT\_DEFAITE}}
+}\Hypertarget{main_8c_a3a6fdc193bb7d49efa29f51611331815a9e6a39a14f43f33e3a229ec52f94627a}\label{main_8c_a3a6fdc193bb7d49efa29f51611331815a9e6a39a14f43f33e3a229ec52f94627a} 
+ETAT\+\_\+\+DEFAITE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ETAT\_QUITTER@{ETAT\_QUITTER}!main.c@{main.c}}
+\index{main.c@{main.c}!ETAT\_QUITTER@{ETAT\_QUITTER}}
+}\Hypertarget{main_8c_a3a6fdc193bb7d49efa29f51611331815a96fdaf8f905a56c455b8243468ab3f4d}\label{main_8c_a3a6fdc193bb7d49efa29f51611331815a96fdaf8f905a56c455b8243468ab3f4d} 
+ETAT\+\_\+\+QUITTER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ETAT\_SAUVEGARDE@{ETAT\_SAUVEGARDE}!main.c@{main.c}}
+\index{main.c@{main.c}!ETAT\_SAUVEGARDE@{ETAT\_SAUVEGARDE}}
+}\Hypertarget{main_8c_a3a6fdc193bb7d49efa29f51611331815ae03b6191ae7a415eade1722cba2247b7}\label{main_8c_a3a6fdc193bb7d49efa29f51611331815ae03b6191ae7a415eade1722cba2247b7} 
+ETAT\+\_\+\+SAUVEGARDE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{doc-func-members}
+\Hypertarget{main_8c_doc-func-members}
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{main_8c_ab997a9e67270e2ce595ea9362874f072}\index{main.c@{main.c}!compteur@{compteur}}
+\index{compteur@{compteur}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{compteur()}{compteur()}}
+{\footnotesize\ttfamily \label{main_8c_ab997a9e67270e2ce595ea9362874f072} 
+void compteur (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+Voici le graphe des appelants de cette fonction :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{main_8c_ab997a9e67270e2ce595ea9362874f072_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{main_8c_a9df11d22c0ecf29623a91a03addff8ef}\index{main.c@{main.c}!lister\_sauvegardes@{lister\_sauvegardes}}
+\index{lister\_sauvegardes@{lister\_sauvegardes}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{lister\_sauvegardes()}{lister\_sauvegardes()}}
+{\footnotesize\ttfamily \label{main_8c_a9df11d22c0ecf29623a91a03addff8ef} 
+int lister\+\_\+sauvegardes (\begin{DoxyParamCaption}\item[{char}]{noms}{\+[$\,$]\+\+[\+PSEUDO\+\_\+\+LEN]\+, }\item[{int}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8c_a840291bc02cba5474a4cb46a9b9566fe} 
+int main (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-var-members}
+\Hypertarget{main_8c_doc-var-members}
+\doxysubsection{Documentation des variables}
+\Hypertarget{main_8c_ae4cb8f99f5f96d1a98ba57a75dab5c09}\index{main.c@{main.c}!tics@{tics}}
+\index{tics@{tics}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{tics}{tics}}
+{\footnotesize\ttfamily \label{main_8c_ae4cb8f99f5f96d1a98ba57a75dab5c09} 
+volatile int tics = 0}
+

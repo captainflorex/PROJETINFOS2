@@ -1,0 +1,142 @@
+\doxysection{Référence du fichier sauvegarde.\+c}
+\hypertarget{sauvegarde_8c}{}\label{sauvegarde_8c}\index{sauvegarde.c@{sauvegarde.c}}
+{\ttfamily \+\#include "{}sauvegarde.\+h"{}}\newline
+{\ttfamily \+\#include $<$stdio.\+h$>$}\newline
+{\ttfamily \+\#include $<$string.\+h$>$}\newline
+{\ttfamily \+\#include $<$windows.\+h$>$}\newline
+Graphe des dépendances par inclusion de sauvegarde.\+c:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sauvegarde_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\+\#define \doxymbox{\hyperlink{sauvegarde_8c_a2bedaca1c6ca66de2397772910fbe140}{NOGDI}}
+\item 
+\+\#define \doxymbox{\hyperlink{sauvegarde_8c_ac7bef5d85e3dcd73eef56ad39ffc84a9}{WIN32\+\_\+\+LEAN\+\_\+\+AND\+\_\+\+MEAN}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+static void \doxymbox{\hyperlink{sauvegarde_8c_ac9a3ba3a895bc585b972bfb2b0c8c61e}{nom\+\_\+fichier}} (const char \texorpdfstring{$\ast$}{*}pseudo, char \texorpdfstring{$\ast$}{*}buf, int buf\+\_\+size)
+\item 
+void \doxymbox{\hyperlink{sauvegarde_8c_a07c35849f53b33522cbc3cc8e1784779}{sauvegarde\+\_\+ecrire}} (const \doxymbox{\hyperlink{struct_etat_jeu}{Etat\+Jeu}} \texorpdfstring{$\ast$}{*}ej)
+\item 
+int \doxymbox{\hyperlink{sauvegarde_8c_a5a6a2ce1cbb6732733a1fc058fe29996}{sauvegarde\+\_\+lire}} (\doxymbox{\hyperlink{struct_etat_jeu}{Etat\+Jeu}} \texorpdfstring{$\ast$}{*}ej)
+\item 
+int \doxymbox{\hyperlink{sauvegarde_8c_a8422aabf50c82f48020bb8896a36abb5}{sauvegarde\+\_\+existe}} (const char \texorpdfstring{$\ast$}{*}pseudo)
+\item 
+int \doxymbox{\hyperlink{sauvegarde_8c_a5d6bc09d3f024cea1682331f9857b868}{sauvegarde\+\_\+lister}} (char noms\+[$\,$]\+\+[\doxymbox{\hyperlink{entites_8h_a5d2813c915f8962316bdba34165daef5}{PSEUDO\+\_\+\+LEN}}]\+, int max)
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{sauvegarde_8c_doc-define-members}
+\doxysubsection{Documentation des macros}
+\Hypertarget{sauvegarde_8c_a2bedaca1c6ca66de2397772910fbe140}\index{sauvegarde.c@{sauvegarde.c}!NOGDI@{NOGDI}}
+\index{NOGDI@{NOGDI}!sauvegarde.c@{sauvegarde.c}}
+\doxysubsubsection{\texorpdfstring{NOGDI}{NOGDI}}
+{\footnotesize\ttfamily \label{sauvegarde_8c_a2bedaca1c6ca66de2397772910fbe140} 
+\+\#define NOGDI}
+
+\Hypertarget{sauvegarde_8c_ac7bef5d85e3dcd73eef56ad39ffc84a9}\index{sauvegarde.c@{sauvegarde.c}!WIN32\_LEAN\_AND\_MEAN@{WIN32\_LEAN\_AND\_MEAN}}
+\index{WIN32\_LEAN\_AND\_MEAN@{WIN32\_LEAN\_AND\_MEAN}!sauvegarde.c@{sauvegarde.c}}
+\doxysubsubsection{\texorpdfstring{WIN32\_LEAN\_AND\_MEAN}{WIN32\_LEAN\_AND\_MEAN}}
+{\footnotesize\ttfamily \label{sauvegarde_8c_ac7bef5d85e3dcd73eef56ad39ffc84a9} 
+\+\#define WIN32\+\_\+\+LEAN\+\_\+\+AND\+\_\+\+MEAN}
+
+
+
+\label{doc-func-members}
+\Hypertarget{sauvegarde_8c_doc-func-members}
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{sauvegarde_8c_ac9a3ba3a895bc585b972bfb2b0c8c61e}\index{sauvegarde.c@{sauvegarde.c}!nom\_fichier@{nom\_fichier}}
+\index{nom\_fichier@{nom\_fichier}!sauvegarde.c@{sauvegarde.c}}
+\doxysubsubsection{\texorpdfstring{nom\_fichier()}{nom\_fichier()}}
+{\footnotesize\ttfamily \label{sauvegarde_8c_ac9a3ba3a895bc585b972bfb2b0c8c61e} 
+void nom\+\_\+fichier (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{pseudo}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{buf}{, }\item[{int}]{buf\+\_\+size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Voici le graphe des appelants de cette fonction :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sauvegarde_8c_ac9a3ba3a895bc585b972bfb2b0c8c61e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sauvegarde_8c_a07c35849f53b33522cbc3cc8e1784779}\index{sauvegarde.c@{sauvegarde.c}!sauvegarde\_ecrire@{sauvegarde\_ecrire}}
+\index{sauvegarde\_ecrire@{sauvegarde\_ecrire}!sauvegarde.c@{sauvegarde.c}}
+\doxysubsubsection{\texorpdfstring{sauvegarde\_ecrire()}{sauvegarde\_ecrire()}}
+{\footnotesize\ttfamily \label{sauvegarde_8c_a07c35849f53b33522cbc3cc8e1784779} 
+void sauvegarde\+\_\+ecrire (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{struct_etat_jeu}{Etat\+Jeu}} \texorpdfstring{$\ast$}{*}}]{ej}{}\end{DoxyParamCaption})}
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{sauvegarde_8c_a07c35849f53b33522cbc3cc8e1784779_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{sauvegarde_8c_a07c35849f53b33522cbc3cc8e1784779_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sauvegarde_8c_a8422aabf50c82f48020bb8896a36abb5}\index{sauvegarde.c@{sauvegarde.c}!sauvegarde\_existe@{sauvegarde\_existe}}
+\index{sauvegarde\_existe@{sauvegarde\_existe}!sauvegarde.c@{sauvegarde.c}}
+\doxysubsubsection{\texorpdfstring{sauvegarde\_existe()}{sauvegarde\_existe()}}
+{\footnotesize\ttfamily \label{sauvegarde_8c_a8422aabf50c82f48020bb8896a36abb5} 
+int sauvegarde\+\_\+existe (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{pseudo}{}\end{DoxyParamCaption})}
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{sauvegarde_8c_a8422aabf50c82f48020bb8896a36abb5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sauvegarde_8c_a5a6a2ce1cbb6732733a1fc058fe29996}\index{sauvegarde.c@{sauvegarde.c}!sauvegarde\_lire@{sauvegarde\_lire}}
+\index{sauvegarde\_lire@{sauvegarde\_lire}!sauvegarde.c@{sauvegarde.c}}
+\doxysubsubsection{\texorpdfstring{sauvegarde\_lire()}{sauvegarde\_lire()}}
+{\footnotesize\ttfamily \label{sauvegarde_8c_a5a6a2ce1cbb6732733a1fc058fe29996} 
+int sauvegarde\+\_\+lire (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_etat_jeu}{Etat\+Jeu}} \texorpdfstring{$\ast$}{*}}]{ej}{}\end{DoxyParamCaption})}
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{sauvegarde_8c_a5a6a2ce1cbb6732733a1fc058fe29996_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{sauvegarde_8c_a5a6a2ce1cbb6732733a1fc058fe29996_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sauvegarde_8c_a5d6bc09d3f024cea1682331f9857b868}\index{sauvegarde.c@{sauvegarde.c}!sauvegarde\_lister@{sauvegarde\_lister}}
+\index{sauvegarde\_lister@{sauvegarde\_lister}!sauvegarde.c@{sauvegarde.c}}
+\doxysubsubsection{\texorpdfstring{sauvegarde\_lister()}{sauvegarde\_lister()}}
+{\footnotesize\ttfamily \label{sauvegarde_8c_a5d6bc09d3f024cea1682331f9857b868} 
+int sauvegarde\+\_\+lister (\begin{DoxyParamCaption}\item[{char}]{noms}{\+[$\,$]\+\+[\+PSEUDO\+\_\+\+LEN]\+, }\item[{int}]{max}{}\end{DoxyParamCaption})}
+
+Voici le graphe des appelants de cette fonction :\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{sauvegarde_8c_a5d6bc09d3f024cea1682331f9857b868_icgraph}
+\end{center}
+\end{figure}

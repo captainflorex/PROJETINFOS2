@@ -1,0 +1,11 @@
+<map id="alfontdll.h" name="alfontdll.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="118,5,215,38"/>
+<area shape="rect" id="Node000002" href="$alfont_8h.html" title=" " alt="" coords="128,86,205,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,51,169,87,164,85,165,56"/>
+<area shape="rect" id="Node000003" href="$affichage_8c.html" title=" " alt="" coords="5,167,107,199"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="135,127,80,168,77,164,130,128"/>
+<area shape="rect" id="Node000004" href="$main_8c.html" title=" " alt="" coords="131,167,202,199"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="169,132,169,168,164,165,165,136"/>
+<area shape="rect" id="Node000005" href="$menu_8c.html" title=" " alt="" coords="226,167,302,199"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="198,126,247,166,242,166,197,131"/>
+</map>

@@ -1,0 +1,165 @@
+\doxysection{Référence de la structure Etat\+Jeu}
+\hypertarget{struct_etat_jeu}{}\label{struct_etat_jeu}\index{EtatJeu@{EtatJeu}}
+
+
+{\ttfamily \+\#include $<$entites.\+h$>$}
+
+
+
+Graphe de collaboration de Etat\+Jeu:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_etat_jeu__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Champs de données}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{struct_joueur}{Joueur}} \doxymbox{\hyperlink{struct_etat_jeu_a7dee0e2699f36b8a465ae681834af88f}{joueur}}
+\item 
+\doxymbox{\hyperlink{struct_bulle}{Bulle}} \doxymbox{\hyperlink{struct_etat_jeu_a5371b2798123a2b5a39aceffaeaa0a61}{bulles}} \+[\doxymbox{\hyperlink{entites_8h_a772c22e70237d36cf621df6a2235ff61}{MAX\+\_\+\+BULLES}}]\+
+\item 
+int \doxymbox{\hyperlink{struct_etat_jeu_aba9c833f5fd68d3d93e9781c282c8229}{nb\+\_\+bulles}}
+\item 
+\doxymbox{\hyperlink{struct_projectile}{Projectile}} \doxymbox{\hyperlink{struct_etat_jeu_ac4d48c020619f28fbd4b5a5ff7a8dcf0}{projectiles}} \+[\doxymbox{\hyperlink{entites_8h_adbc131e9b147b67d84003e054b355365}{MAX\+\_\+\+PROJECTILES}}]\+
+\item 
+\doxymbox{\hyperlink{struct_bonus_arme}{Bonus\+Arme}} \doxymbox{\hyperlink{struct_etat_jeu_a5b494d0a614d7e3bab7641a2d43c8332}{bonus}} \+[\doxymbox{\hyperlink{entites_8h_a02f266f0f132735cd3c64e67251c163d}{MAX\+\_\+\+BONUS}}]\+
+\item 
+\doxymbox{\hyperlink{struct_boss}{Boss}} \doxymbox{\hyperlink{struct_etat_jeu_a80b67d3d591c0d1e4623993e7ddd5ac6}{boss}}
+\item 
+int \doxymbox{\hyperlink{struct_etat_jeu_ad6d7ae27c8298976545ebfde15b4df4a}{niveau}}
+\item 
+float \doxymbox{\hyperlink{struct_etat_jeu_acf0776c2730b28ae9879c3c2ec5fb205}{temps\+\_\+restant}}
+\item 
+int \doxymbox{\hyperlink{struct_etat_jeu_a793e80e24d15aadca5708038b022944f}{decompte}}
+\item 
+float \doxymbox{\hyperlink{struct_etat_jeu_a859f7580d4aedcfb5d59b67a41d228ce}{decompte\+\_\+timer}}
+\item 
+\doxymbox{\hyperlink{struct_liste_eclairs}{Liste\+Eclairs}} \doxymbox{\hyperlink{struct_etat_jeu_ac5dd2e1064d90fef8a115b4a4a9d9a7d}{eclairs}}
+\item 
+int \doxymbox{\hyperlink{struct_etat_jeu_a3f638e5a4975230af01c40e613ad0d3d}{bulles\+\_\+en\+\_\+attente}}
+\item 
+float \doxymbox{\hyperlink{struct_etat_jeu_a433045ef9b17382e86cb062b16424a9a}{timer\+\_\+arme\+\_\+speciale}}
+\item 
+float \doxymbox{\hyperlink{struct_etat_jeu_afb5e772fa2c38d9e89f9473e89b7b794}{explosion\+\_\+x}}
+\item 
+float \doxymbox{\hyperlink{struct_etat_jeu_a92f49feda43c0f42a4aa2f15e8656fb7}{explosion\+\_\+y}}
+\item 
+float \doxymbox{\hyperlink{struct_etat_jeu_a804140461832d3e70d1929c933279c0d}{explosion\+\_\+timer}}
+\item 
+int \doxymbox{\hyperlink{struct_etat_jeu_a16e38ba17f90cc36897c6d7456aab789}{boss\+\_\+a\+\_\+spawne}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-variable-members}
+\Hypertarget{struct_etat_jeu_doc-variable-members}
+\doxysubsection{Documentation des champs}
+\Hypertarget{struct_etat_jeu_a5b494d0a614d7e3bab7641a2d43c8332}\index{EtatJeu@{EtatJeu}!bonus@{bonus}}
+\index{bonus@{bonus}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{bonus}{bonus}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_a5b494d0a614d7e3bab7641a2d43c8332} 
+\doxymbox{\hyperlink{struct_bonus_arme}{Bonus\+Arme}} Etat\+Jeu::\+bonus\+[\doxymbox{\hyperlink{entites_8h_a02f266f0f132735cd3c64e67251c163d}{MAX\+\_\+\+BONUS}}]\+}
+
+\Hypertarget{struct_etat_jeu_a80b67d3d591c0d1e4623993e7ddd5ac6}\index{EtatJeu@{EtatJeu}!boss@{boss}}
+\index{boss@{boss}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{boss}{boss}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_a80b67d3d591c0d1e4623993e7ddd5ac6} 
+\doxymbox{\hyperlink{struct_boss}{Boss}} Etat\+Jeu::\+boss}
+
+\Hypertarget{struct_etat_jeu_a16e38ba17f90cc36897c6d7456aab789}\index{EtatJeu@{EtatJeu}!boss\_a\_spawne@{boss\_a\_spawne}}
+\index{boss\_a\_spawne@{boss\_a\_spawne}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{boss\_a\_spawne}{boss\_a\_spawne}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_a16e38ba17f90cc36897c6d7456aab789} 
+int Etat\+Jeu::\+boss\+\_\+a\+\_\+spawne}
+
+\Hypertarget{struct_etat_jeu_a5371b2798123a2b5a39aceffaeaa0a61}\index{EtatJeu@{EtatJeu}!bulles@{bulles}}
+\index{bulles@{bulles}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{bulles}{bulles}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_a5371b2798123a2b5a39aceffaeaa0a61} 
+\doxymbox{\hyperlink{struct_bulle}{Bulle}} Etat\+Jeu::\+bulles\+[\doxymbox{\hyperlink{entites_8h_a772c22e70237d36cf621df6a2235ff61}{MAX\+\_\+\+BULLES}}]\+}
+
+\Hypertarget{struct_etat_jeu_a3f638e5a4975230af01c40e613ad0d3d}\index{EtatJeu@{EtatJeu}!bulles\_en\_attente@{bulles\_en\_attente}}
+\index{bulles\_en\_attente@{bulles\_en\_attente}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{bulles\_en\_attente}{bulles\_en\_attente}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_a3f638e5a4975230af01c40e613ad0d3d} 
+int Etat\+Jeu::\+bulles\+\_\+en\+\_\+attente}
+
+\Hypertarget{struct_etat_jeu_a793e80e24d15aadca5708038b022944f}\index{EtatJeu@{EtatJeu}!decompte@{decompte}}
+\index{decompte@{decompte}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{decompte}{decompte}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_a793e80e24d15aadca5708038b022944f} 
+int Etat\+Jeu::\+decompte}
+
+\Hypertarget{struct_etat_jeu_a859f7580d4aedcfb5d59b67a41d228ce}\index{EtatJeu@{EtatJeu}!decompte\_timer@{decompte\_timer}}
+\index{decompte\_timer@{decompte\_timer}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{decompte\_timer}{decompte\_timer}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_a859f7580d4aedcfb5d59b67a41d228ce} 
+float Etat\+Jeu::\+decompte\+\_\+timer}
+
+\Hypertarget{struct_etat_jeu_ac5dd2e1064d90fef8a115b4a4a9d9a7d}\index{EtatJeu@{EtatJeu}!eclairs@{eclairs}}
+\index{eclairs@{eclairs}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{eclairs}{eclairs}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_ac5dd2e1064d90fef8a115b4a4a9d9a7d} 
+\doxymbox{\hyperlink{struct_liste_eclairs}{Liste\+Eclairs}} Etat\+Jeu::\+eclairs}
+
+\Hypertarget{struct_etat_jeu_a804140461832d3e70d1929c933279c0d}\index{EtatJeu@{EtatJeu}!explosion\_timer@{explosion\_timer}}
+\index{explosion\_timer@{explosion\_timer}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{explosion\_timer}{explosion\_timer}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_a804140461832d3e70d1929c933279c0d} 
+float Etat\+Jeu::\+explosion\+\_\+timer}
+
+\Hypertarget{struct_etat_jeu_afb5e772fa2c38d9e89f9473e89b7b794}\index{EtatJeu@{EtatJeu}!explosion\_x@{explosion\_x}}
+\index{explosion\_x@{explosion\_x}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{explosion\_x}{explosion\_x}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_afb5e772fa2c38d9e89f9473e89b7b794} 
+float Etat\+Jeu::\+explosion\+\_\+x}
+
+\Hypertarget{struct_etat_jeu_a92f49feda43c0f42a4aa2f15e8656fb7}\index{EtatJeu@{EtatJeu}!explosion\_y@{explosion\_y}}
+\index{explosion\_y@{explosion\_y}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{explosion\_y}{explosion\_y}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_a92f49feda43c0f42a4aa2f15e8656fb7} 
+float Etat\+Jeu::\+explosion\+\_\+y}
+
+\Hypertarget{struct_etat_jeu_a7dee0e2699f36b8a465ae681834af88f}\index{EtatJeu@{EtatJeu}!joueur@{joueur}}
+\index{joueur@{joueur}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{joueur}{joueur}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_a7dee0e2699f36b8a465ae681834af88f} 
+\doxymbox{\hyperlink{struct_joueur}{Joueur}} Etat\+Jeu::\+joueur}
+
+\Hypertarget{struct_etat_jeu_aba9c833f5fd68d3d93e9781c282c8229}\index{EtatJeu@{EtatJeu}!nb\_bulles@{nb\_bulles}}
+\index{nb\_bulles@{nb\_bulles}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{nb\_bulles}{nb\_bulles}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_aba9c833f5fd68d3d93e9781c282c8229} 
+int Etat\+Jeu::\+nb\+\_\+bulles}
+
+\Hypertarget{struct_etat_jeu_ad6d7ae27c8298976545ebfde15b4df4a}\index{EtatJeu@{EtatJeu}!niveau@{niveau}}
+\index{niveau@{niveau}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{niveau}{niveau}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_ad6d7ae27c8298976545ebfde15b4df4a} 
+int Etat\+Jeu::\+niveau}
+
+\Hypertarget{struct_etat_jeu_ac4d48c020619f28fbd4b5a5ff7a8dcf0}\index{EtatJeu@{EtatJeu}!projectiles@{projectiles}}
+\index{projectiles@{projectiles}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{projectiles}{projectiles}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_ac4d48c020619f28fbd4b5a5ff7a8dcf0} 
+\doxymbox{\hyperlink{struct_projectile}{Projectile}} Etat\+Jeu::\+projectiles\+[\doxymbox{\hyperlink{entites_8h_adbc131e9b147b67d84003e054b355365}{MAX\+\_\+\+PROJECTILES}}]\+}
+
+\Hypertarget{struct_etat_jeu_acf0776c2730b28ae9879c3c2ec5fb205}\index{EtatJeu@{EtatJeu}!temps\_restant@{temps\_restant}}
+\index{temps\_restant@{temps\_restant}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{temps\_restant}{temps\_restant}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_acf0776c2730b28ae9879c3c2ec5fb205} 
+float Etat\+Jeu::\+temps\+\_\+restant}
+
+\Hypertarget{struct_etat_jeu_a433045ef9b17382e86cb062b16424a9a}\index{EtatJeu@{EtatJeu}!timer\_arme\_speciale@{timer\_arme\_speciale}}
+\index{timer\_arme\_speciale@{timer\_arme\_speciale}!EtatJeu@{EtatJeu}}
+\doxysubsubsection{\texorpdfstring{timer\_arme\_speciale}{timer\_arme\_speciale}}
+{\footnotesize\ttfamily \label{struct_etat_jeu_a433045ef9b17382e86cb062b16424a9a} 
+float Etat\+Jeu::\+timer\+\_\+arme\+\_\+speciale}
+
+
+
+La documentation de cette structure a été générée à partir du fichier suivant :\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{entites_8h}{entites.\+h}}\end{DoxyCompactItemize}
