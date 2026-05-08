@@ -64,7 +64,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/flori/Documents/Projet_INFO_SEM2-main/Projet_INFO_SEM2-main/alfont-code-r12-trunk/alfont-code-r12-trunk/include"
+					"path" : "C:/Users/flori/Documents/Nouveau dossier (2)/PROJETINFOS2/alfont-code-r12-trunk/alfont-code-r12-trunk/include"
 				}
 			],
 			"language" : "C",
@@ -99,7 +99,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\flori\\Documents\\Projet_INFO_SEM2-main\\Projet_INFO_SEM2-main\\alfont-code-r12-trunk\\alfont-code-r12-trunk\\lib\\mingw32\\libalfont.a",
+				"fragment" : "\"C:\\Users\\flori\\Documents\\Nouveau dossier (2)\\PROJETINFOS2\\alfont-code-r12-trunk\\alfont-code-r12-trunk\\lib\\mingw32\\libalfont.a\"",
 				"role" : "libraries"
 			},
 			{
@@ -128,7 +128,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"fragment" : "C:/Users/flori/Documents/Projet_INFO_SEM2-main/Projet_INFO_SEM2-main/alfont-code-r12-trunk/alfont-code-r12-trunk/lib/mingw32/libalfont.a"
+			"fragment" : "C:/Users/flori/Documents/Nouveau dossier (2)/PROJETINFOS2/alfont-code-r12-trunk/alfont-code-r12-trunk/lib/mingw32/libalfont.a"
 		},
 		{
 			"backtrace" : 2,

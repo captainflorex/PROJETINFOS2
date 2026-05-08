@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/flori/Documents/Projet_INFO_SEM2-main/Projet_INFO_SEM2-main/cmake-build-debug"
+			"value" : "c:/Users/flori/Documents/Nouveau dossier (2)/PROJETINFOS2/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -447,7 +447,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/flori/Documents/Projet_INFO_SEM2-main/Projet_INFO_SEM2-main/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/flori/Documents/Nouveau dossier (2)/PROJETINFOS2/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -519,7 +519,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/flori/Documents/Projet_INFO_SEM2-main/Projet_INFO_SEM2-main"
+			"value" : "C:/Users/flori/Documents/Nouveau dossier (2)/PROJETINFOS2"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1187,7 +1187,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/flori/Documents/Projet_INFO_SEM2-main/Projet_INFO_SEM2-main/cmake-build-debug"
+			"value" : "C:/Users/flori/Documents/Nouveau dossier (2)/PROJETINFOS2/cmake-build-debug"
 		},
 		{
 			"name" : "Projet_INFO_SEM2_IS_TOP_LEVEL",
@@ -1211,7 +1211,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/flori/Documents/Projet_INFO_SEM2-main/Projet_INFO_SEM2-main"
+			"value" : "C:/Users/flori/Documents/Nouveau dossier (2)/PROJETINFOS2"
 		}
 	],
 	"kind" : "cache",

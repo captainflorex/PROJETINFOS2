@@ -40,7 +40,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Projet_INFO_SEM2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Projet_INFO_SEM2-Debug-1ef0bfe0b2a0c900b68f.json",
+					"jsonFile" : "target-Projet_INFO_SEM2-Debug-5620ea5184d7ceb6db6b.json",
 					"name" : "Projet_INFO_SEM2",
 					"projectIndex" : 0
 				}
@@ -50,8 +50,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/flori/Documents/Projet_INFO_SEM2-main/Projet_INFO_SEM2-main/cmake-build-debug",
-		"source" : "C:/Users/flori/Documents/Projet_INFO_SEM2-main/Projet_INFO_SEM2-main"
+		"build" : "C:/Users/flori/Documents/Nouveau dossier (2)/PROJETINFOS2/cmake-build-debug",
+		"source" : "C:/Users/flori/Documents/Nouveau dossier (2)/PROJETINFOS2"
 	},
 	"version" : 
 	{
